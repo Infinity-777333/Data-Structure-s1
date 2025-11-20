@@ -64,7 +64,7 @@
      return;
      }
     
-     printf("The elements in the stack are :");
+     printf("The elements in the queue are :");
      while(temp!=NULL)
      {
       printf(" %d",temp->data);
