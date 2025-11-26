@@ -10,7 +10,9 @@ void enqueue(int value) {
         printf("Queue Overflow\n");
     else {
         if (front == -1)
+        {
             front = 0;
+        }
         queue[++rear] = value;
     }
 }
@@ -18,8 +20,11 @@ void enqueue(int value) {
 // Dequeue
 int dequeue() {
     if (front == -1 || front > rear)
+    {
+        
         return -1;
-    return queue[front++];
+    }
+     return queue[front++];
 }
 
 // BFS Function
@@ -49,9 +54,12 @@ int main() {
     
     printf("Enter adjacency matrix:\n");
     for (i=0; i<n; i++)
+        {
         for (j=0; j<n; j++)
+            {
             scanf("%d", &adj[i][j]);
-            
+            }
+        }
     printf("Enter starting vertex (0 to %d): ", n-1);
     scanf("%d", &start);
     
