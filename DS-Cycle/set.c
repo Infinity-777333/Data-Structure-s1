@@ -73,7 +73,7 @@ printf("} \n\n");
 printf("Complement of B is bit representation is=");
 for(i=0;i<5;i++){
     compB[i]=1-B[i];
-    printf("%d",compA[i]);
+    printf("%d",compB[i]);
 }
 
 printf("\n B COMPLIMENT {");
