@@ -88,7 +88,7 @@ printf("} \n\n");
 printf("Difference of A-B in bit representation is=");
 for(i=0;i<5;i++){
     diffA[i]=A[i]&compB[i];
-    printf("%d",compA[i]);
+    printf("%d",diffA[i]);
 }
 
 printf("\n A-B {");
@@ -102,7 +102,7 @@ printf("} \n\n");
 printf("Difference of B-A in bit representation is=");
 for(i=0;i<5;i++){
     diffB[i]=B[i]&compA[i];
-    printf("%d",compB[i]);
+    printf("%d",  diffB[i]);
 }
 
 printf("\n B-A {");
